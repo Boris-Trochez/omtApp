@@ -1,0 +1,325 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome Headless 92.0.4515.131 (Mac OS 10.15.7)" package="unit" timestamp="2021-08-12T20:11:39" id="0" hostname="iMac-de-webmaster.local" tests="15" errors="0" failures="15" time="0.254">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/92.0.4515.131 Safari/537.36"/>
+  </properties>
+  <testcase name="List users Obtiene la lista de usuarios al inicializar el componente" time="0.134" classname=".List users">
+    <failure type="">Error: 1 timer(s) still in the queue.
+    at UserContext.fakeAsyncFn (node_modules/zone.js/dist/zone-testing.js:2057:1)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:371:1)
+    at Zone.run (node_modules/zone.js/dist/zone-evergreen.js:134:1)
+    at runInTestZone (node_modules/zone.js/dist/zone-testing.js:581:1)
+    at UserContext.&lt;anonymous&gt; (node_modules/zone.js/dist/zone-testing.js:596:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="List users Filtra los el usuario por el nombre (filtra correctamente)" time="0.009" classname=".List users">
+    <failure type="">TypeError: Cannot set property 'value' of null
+    at eventInput (integration-tests/shared/util/event-input.ts:3:16)
+    at UserContext.&lt;anonymous&gt; (integration-tests/test/user-list.spec.ts:100:15)
+    at UserContext.fakeAsyncFn (node_modules/zone.js/dist/zone-testing.js:2046:1)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:371:1)
+    at Zone.run (node_modules/zone.js/dist/zone-evergreen.js:134:1)
+    at runInTestZone (node_modules/zone.js/dist/zone-testing.js:581:1)
+    at UserContext.&lt;anonymous&gt; (node_modules/zone.js/dist/zone-testing.js:596:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="List users Filtra los el usuario por el nombre (no debe encontrar coincidencias)" time="0.006" classname=".List users">
+    <failure type="">TypeError: Cannot set property 'value' of null
+    at eventInput (integration-tests/shared/util/event-input.ts:3:16)
+    at UserContext.&lt;anonymous&gt; (integration-tests/test/user-list.spec.ts:132:15)
+    at UserContext.fakeAsyncFn (node_modules/zone.js/dist/zone-testing.js:2046:1)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:371:1)
+    at Zone.run (node_modules/zone.js/dist/zone-evergreen.js:134:1)
+    at runInTestZone (node_modules/zone.js/dist/zone-testing.js:581:1)
+    at UserContext.&lt;anonymous&gt; (node_modules/zone.js/dist/zone-testing.js:596:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="List users Filtra los el usuario por el nombre (no debe filtrar porque tiene menos de 3 caracteres)" time="0.014" classname=".List users">
+    <failure type="">Error: 1 timer(s) still in the queue.
+    at UserContext.fakeAsyncFn (node_modules/zone.js/dist/zone-testing.js:2057:1)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:371:1)
+    at Zone.run (node_modules/zone.js/dist/zone-evergreen.js:134:1)
+    at runInTestZone (node_modules/zone.js/dist/zone-testing.js:581:1)
+    at UserContext.&lt;anonymous&gt; (node_modules/zone.js/dist/zone-testing.js:596:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="List users Elimina un usuario de la lista" time="0.006" classname=".List users">
+    <failure type="">TypeError: Cannot read property 'click' of null
+    at UserContext.&lt;anonymous&gt; (integration-tests/test/user-list.spec.ts:89:15)
+    at UserContext.fakeAsyncFn (node_modules/zone.js/dist/zone-testing.js:2046:1)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:371:1)
+    at Zone.run (node_modules/zone.js/dist/zone-evergreen.js:134:1)
+    at runInTestZone (node_modules/zone.js/dist/zone-testing.js:581:1)
+    at UserContext.&lt;anonymous&gt; (node_modules/zone.js/dist/zone-testing.js:596:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="List users Validar existencias de los elementos por el ID" time="0.006" classname=".List users">
+    <failure type="">TypeError: Cannot read property 'tagName' of null
+    at UserContext.&lt;anonymous&gt; (integration-tests/test/user-list.spec.ts:49:24)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:371:1)
+    at Zone.run (node_modules/zone.js/dist/zone-evergreen.js:134:1)
+    at runInTestZone (node_modules/zone.js/dist/zone-testing.js:581:1)
+    at UserContext.&lt;anonymous&gt; (node_modules/zone.js/dist/zone-testing.js:596:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="Login Page El token ya esta almacenado y debe redirigir al la pagina principal" time="0.016" classname=".Login Page">
+    <failure type="">Error: Method not implemented.
+    at LoginComponent.ngOnInit (src/app/feature/login/login/login.component.ts:16:11)
+    at callHook (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2573:1)
+    at callHooks (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2542:1)
+    at executeInitAndCheckHooks (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2493:1)
+    at refreshView (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:9481:1)
+    at renderComponentOrTemplate (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:9580:1)
+    at tickRootContext (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:10811:1)
+    at detectChangesInRootView (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:10836:1)
+    at RootViewRef.detectChanges (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:22815:1)
+    at ComponentFixture._tick (node_modules/@angular/core/__ivy_ngcc__/fesm2015/testing.js:141:1)
+</failure>
+  </testcase>
+  <testcase name="Login Page Validar existencias de los elementos por el ID" time="0.011" classname=".Login Page">
+    <failure type="">Error: Method not implemented.
+    at LoginComponent.ngOnInit (src/app/feature/login/login/login.component.ts:16:11)
+    at SafeSubscriber._next (integration-tests/test/login.spec.ts:135:17)
+    at SafeSubscriber.__tryOrUnsub (node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+    at SafeSubscriber.next (node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
+    at Subscriber._next (node_modules/rxjs/_esm2015/internal/Subscriber.js:72:1)
+    at Subscriber.next (node_modules/rxjs/_esm2015/internal/Subscriber.js:49:1)
+    at Observable._subscribe (node_modules/rxjs/_esm2015/internal/util/subscribeToArray.js:3:1)
+    at Observable._trySubscribe (node_modules/rxjs/_esm2015/internal/Observable.js:42:1)
+    at Observable.subscribe (node_modules/rxjs/_esm2015/internal/Observable.js:28:1)
+    at UserContext.&lt;anonymous&gt; (integration-tests/test/login.spec.ts:132:11)
+</failure>
+    <failure type="">Error: Method not implemented.
+    at LoginComponent.ngOnInit (src/app/feature/login/login/login.component.ts:16:11)
+    at callHook (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2573:1)
+    at callHooks (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2542:1)
+    at executeInitAndCheckHooks (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2493:1)
+    at refreshView (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:9481:1)
+    at renderComponentOrTemplate (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:9580:1)
+    at tickRootContext (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:10811:1)
+    at detectChangesInRootView (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:10836:1)
+    at RootViewRef.detectChanges (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:22815:1)
+    at ComponentFixture._tick (node_modules/@angular/core/__ivy_ngcc__/fesm2015/testing.js:141:1)
+</failure>
+    <failure type="">Error: Expected undefined to equal 'INPUT'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (integration-tests/test/login.spec.ts:62:33)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
+</failure>
+    <failure type="">Error: Expected undefined to equal 'INPUT'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (integration-tests/test/login.spec.ts:63:36)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
+</failure>
+    <failure type="">Error: Expected undefined to equal 'BUTTON'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (integration-tests/test/login.spec.ts:64:36)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
+</failure>
+  </testcase>
+  <testcase name="Login Page Inicia sesión, debe aparecer el error por correo y clave vacío" time="0.008" classname=".Login Page">
+    <failure type="">Error: Method not implemented.
+    at LoginComponent.ngOnInit (src/app/feature/login/login/login.component.ts:16:11)
+    at callHook (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2573:1)
+    at callHooks (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2542:1)
+    at executeInitAndCheckHooks (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2493:1)
+    at refreshView (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:9481:1)
+    at renderComponentOrTemplate (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:9580:1)
+    at tickRootContext (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:10811:1)
+    at detectChangesInRootView (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:10836:1)
+    at RootViewRef.detectChanges (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:22815:1)
+    at ComponentFixture._tick (node_modules/@angular/core/__ivy_ngcc__/fesm2015/testing.js:141:1)
+</failure>
+    <failure type="">TypeError: Cannot set property 'value' of null
+    at eventInput (integration-tests/shared/util/event-input.ts:3:16)
+    at UserContext.&lt;anonymous&gt; (integration-tests/test/login.spec.ts:116:15)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:371:1)
+    at Zone.run (node_modules/zone.js/dist/zone-evergreen.js:134:1)
+    at runInTestZone (node_modules/zone.js/dist/zone-testing.js:581:1)
+    at UserContext.&lt;anonymous&gt; (node_modules/zone.js/dist/zone-testing.js:596:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="Login Page Inicia sesión, debe aparecer el error &quot;The minimum of characters will be 8&quot;" time="0.007" classname=".Login Page">
+    <failure type="">Error: Method not implemented.
+    at LoginComponent.ngOnInit (src/app/feature/login/login/login.component.ts:16:11)
+    at callHook (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2573:1)
+    at callHooks (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2542:1)
+    at executeInitAndCheckHooks (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2493:1)
+    at refreshView (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:9481:1)
+    at renderComponentOrTemplate (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:9580:1)
+    at tickRootContext (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:10811:1)
+    at detectChangesInRootView (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:10836:1)
+    at RootViewRef.detectChanges (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:22815:1)
+    at ComponentFixture._tick (node_modules/@angular/core/__ivy_ngcc__/fesm2015/testing.js:141:1)
+</failure>
+    <failure type="">TypeError: Cannot set property 'value' of null
+    at eventInput (integration-tests/shared/util/event-input.ts:3:16)
+    at UserContext.&lt;anonymous&gt; (integration-tests/test/login.spec.ts:98:15)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:371:1)
+    at Zone.run (node_modules/zone.js/dist/zone-evergreen.js:134:1)
+    at runInTestZone (node_modules/zone.js/dist/zone-testing.js:581:1)
+    at UserContext.&lt;anonymous&gt; (node_modules/zone.js/dist/zone-testing.js:596:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="Login Page Inicia sesión, debe almacenar el token en localStorage y redirige la pagina" time="0.007" classname=".Login Page">
+    <failure type="">Error: Method not implemented.
+    at LoginComponent.ngOnInit (src/app/feature/login/login/login.component.ts:16:11)
+    at callHook (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2573:1)
+    at callHooks (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2542:1)
+    at executeInitAndCheckHooks (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2493:1)
+    at refreshView (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:9481:1)
+    at renderComponentOrTemplate (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:9580:1)
+    at tickRootContext (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:10811:1)
+    at detectChangesInRootView (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:10836:1)
+    at RootViewRef.detectChanges (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:22815:1)
+    at ComponentFixture._tick (node_modules/@angular/core/__ivy_ngcc__/fesm2015/testing.js:141:1)
+</failure>
+    <failure type="">TypeError: Cannot set property 'value' of null
+    at eventInput (integration-tests/shared/util/event-input.ts:3:16)
+    at UserContext.&lt;anonymous&gt; (integration-tests/test/login.spec.ts:77:15)
+    at UserContext.fakeAsyncFn (node_modules/zone.js/dist/zone-testing.js:2046:1)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:371:1)
+    at Zone.run (node_modules/zone.js/dist/zone-evergreen.js:134:1)
+    at runInTestZone (node_modules/zone.js/dist/zone-testing.js:581:1)
+    at UserContext.&lt;anonymous&gt; (node_modules/zone.js/dist/zone-testing.js:596:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="Nav Bar Validar existencias de los elementos por el ID" time="0.008" classname=".Nav Bar">
+    <failure type="">Error: Expected undefined to equal 'A'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (integration-tests/test/nav-bar.spec.ts:37:35)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
+</failure>
+    <failure type="">Error: Expected undefined to equal 'A'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (integration-tests/test/nav-bar.spec.ts:38:37)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
+</failure>
+    <failure type="">Error: Expected undefined to equal 'A'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (integration-tests/test/nav-bar.spec.ts:39:33)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
+</failure>
+  </testcase>
+  <testcase name="Create User Todos los campos están llenos, debe habilitar el btn y redireccionar" time="0.008" classname=".Create User">
+    <failure type="">Error: Method not implemented.
+    at CreateUserComponent.ngOnInit (src/app/feature/users/create-user/create-user.component.ts:16:11)
+    at callHook (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2573:1)
+    at callHooks (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2542:1)
+    at executeInitAndCheckHooks (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2493:1)
+    at refreshView (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:9481:1)
+    at renderComponentOrTemplate (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:9580:1)
+    at tickRootContext (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:10811:1)
+    at detectChangesInRootView (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:10836:1)
+    at RootViewRef.detectChanges (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:22815:1)
+    at ComponentFixture._tick (node_modules/@angular/core/__ivy_ngcc__/fesm2015/testing.js:141:1)
+</failure>
+    <failure type="">Error: Method not implemented.
+    at CreateUserComponent.ngOnInit (src/app/feature/users/create-user/create-user.component.ts:16:11)
+    at UserContext.&lt;anonymous&gt; (integration-tests/test/create-user.spec.ts:90:15)
+    at UserContext.fakeAsyncFn (node_modules/zone.js/dist/zone-testing.js:2046:1)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:371:1)
+    at Zone.run (node_modules/zone.js/dist/zone-evergreen.js:134:1)
+    at runInTestZone (node_modules/zone.js/dist/zone-testing.js:581:1)
+    at UserContext.&lt;anonymous&gt; (node_modules/zone.js/dist/zone-testing.js:596:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="Create User Los campos están vacíos y deben aparecer el mensaje de error y deshabilitar para crear usuario" time="0.007" classname=".Create User">
+    <failure type="">Error: Method not implemented.
+    at CreateUserComponent.ngOnInit (src/app/feature/users/create-user/create-user.component.ts:16:11)
+    at callHook (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2573:1)
+    at callHooks (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2542:1)
+    at executeInitAndCheckHooks (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2493:1)
+    at refreshView (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:9481:1)
+    at renderComponentOrTemplate (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:9580:1)
+    at tickRootContext (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:10811:1)
+    at detectChangesInRootView (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:10836:1)
+    at RootViewRef.detectChanges (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:22815:1)
+    at ComponentFixture._tick (node_modules/@angular/core/__ivy_ngcc__/fesm2015/testing.js:141:1)
+</failure>
+    <failure type="">Error: Method not implemented.
+    at CreateUserComponent.ngOnInit (src/app/feature/users/create-user/create-user.component.ts:16:11)
+    at UserContext.&lt;anonymous&gt; (integration-tests/test/create-user.spec.ts:66:15)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:371:1)
+    at Zone.run (node_modules/zone.js/dist/zone-evergreen.js:134:1)
+    at runInTestZone (node_modules/zone.js/dist/zone-testing.js:581:1)
+    at UserContext.&lt;anonymous&gt; (node_modules/zone.js/dist/zone-testing.js:596:1)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="Create User Validar existencias de los elementos por el ID" time="0.007" classname=".Create User">
+    <failure type="">Error: Method not implemented.
+    at CreateUserComponent.ngOnInit (src/app/feature/users/create-user/create-user.component.ts:16:11)
+    at callHook (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2573:1)
+    at callHooks (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2542:1)
+    at executeInitAndCheckHooks (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:2493:1)
+    at refreshView (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:9481:1)
+    at renderComponentOrTemplate (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:9580:1)
+    at tickRootContext (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:10811:1)
+    at detectChangesInRootView (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:10836:1)
+    at RootViewRef.detectChanges (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:22815:1)
+    at ComponentFixture._tick (node_modules/@angular/core/__ivy_ngcc__/fesm2015/testing.js:141:1)
+</failure>
+    <failure type="">Error: Expected undefined to equal 'INPUT'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (integration-tests/test/create-user.spec.ts:54:32)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
+</failure>
+    <failure type="">Error: Expected undefined to equal 'INPUT'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (integration-tests/test/create-user.spec.ts:55:31)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
+</failure>
+    <failure type="">Error: Expected undefined to equal 'BUTTON'.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (integration-tests/test/create-user.spec.ts:56:32)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
+</failure>
+  </testcase>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
