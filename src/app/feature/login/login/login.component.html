@@ -2,3 +2,73 @@
   Recuerde conservar los id, no deben ser modificados
   ids = login__email, login__password, login__password-error, login__email-error, login__btn-login
 -->
+<div class="container ">
+  <div class=" row align-items-start">
+    <div class="col verticalSpace"></div>
+  </div>
+  <div  class="row align-items-center " >
+    <div class="col offset-md-3 ">
+      <form  
+        autocomplete="off"
+        [formGroup]="myForm"
+        (ngSubmit)="login()"
+        class="container"
+        >
+
+        <div class="row">
+          <div class="col col-8">
+            <h2>Login</h2>
+            <hr> 
+          </div>
+        </div>  
+              
+
+        <div class="row">
+          <mat-form-field class="col col-8"  
+                          appearance="fill">
+            <mat-label>Email</mat-label>
+            <input type="email" 
+                   matInput 
+                   formControlName="email" 
+                   placeholder="Ex. pat@example.com">
+            <mat-hint>Errors appear instantly!</mat-hint>
+            <mat-error *ngIf="isInvalid( 'email' )">
+              Please enter a valid email address
+            </mat-error>
+            <mat-error *ngIf="isEmpty( 'email' )">
+              Email is <strong>Required</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+       
+        <br>
+       
+        <div class="row">
+          <mat-form-field class="col col-8"  appearance="fill">
+            <mat-label>Password</mat-label>
+            <input type="password" matInput formControlName="password" 
+                  placeholder="Enter a password">
+            <mat-hint>Errors appear instantly!</mat-hint>
+            <mat-error *ngIf="isInvalid( 'password' )">
+                The minimum of characters will be <strong>8</strong>
+            </mat-error>
+            <mat-error *ngIf="isEmpty( 'password' )">
+                Password is <strong>Required</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+
+        <div class="row">
+          <div class="col" >
+            <button
+            type="submit"
+            >
+            Login
+            </button>
+          </div>
+        </div>
+   
+      </form> 
+    </div>
+  </div> 
+</div>

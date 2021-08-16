@@ -4,3 +4,20 @@
 :root {
 
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.row-height {
+    min-height: 100%;
+}
+
+.verticalSpace {
+    margin-bottom: 5rem;
+}
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";

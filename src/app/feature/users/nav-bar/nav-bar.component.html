@@ -2,3 +2,53 @@
   Recuerde conservar los id, no deben ser modificados
   ids = nav-bar__btn-list-user, nav-bar__btn-create-user, nav-bar__btn-logout
 -->
+
+<mat-sidenav-container fullscreen>
+  <mat-sidenav #sidenav 
+               mode="push">
+    
+    <mat-toolbar color="primary">
+      <span>Menú</span> 
+
+      <span class="spacer"></span>
+
+      <button mat-icon-button 
+              (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </mat-toolbar>
+
+    <mat-nav-list>
+      <a routerLink="./list"
+         mat-list-item
+         (click)="sidenav.toggle()">
+        <mat-icon mat-list-icon>label</mat-icon>
+        <span>Users list</span>
+      </a>
+      <a routerLink="./create"
+         mat-list-item
+         (click)="sidenav.toggle()">
+        <mat-icon mat-list-icon>add</mat-icon>
+        <span>Create user</span>
+      </a>
+    </mat-nav-list>
+
+  </mat-sidenav>
+
+  <mat-toolbar>
+    <button mat-icon-button 
+            (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+   
+    <span class="spacer"></span>
+   
+    <button mat-button 
+            (click)="logout()">
+      Logout
+    </button>
+  </mat-toolbar>
+
+
+  <router-outlet></router-outlet>
+</mat-sidenav-container>

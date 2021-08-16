@@ -2,3 +2,74 @@
   Recuerde conservar los id, no deben ser modificados
   ids = user-create__name, user-create__name-error, user-create__job, user-create__job-error, user-create__btn-create
 -->
+
+
+<div class="container">
+  <div class=" row align-items-start">
+    <div class="col verticalSpace"></div>
+  </div>
+
+  <div class="row">
+    <div class="col offset-md-3">
+      <form [formGroup]='myForm' 
+            (ngSubmit)="ngSubmit()"
+            >
+
+        <div  class="container">
+         
+          <div class="row">
+              <mat-form-field class="col-md-8" 
+                              hintLabel="Max 12 characters" 
+                              appearance="fill">
+                <mat-label>Enter your name</mat-label>
+                <input matInput 
+                       formControlName="name" 
+                       #name maxlength="12" 
+                       autocomplete="off" 
+                       placeholder="Ex. George">
+                <mat-hint align="end">{{name.value?.length || 0}}/12</mat-hint>
+                <mat-error *ngIf="isEmpty( 'name' )">
+                  Name is <strong>Required</strong>
+                </mat-error>
+              </mat-form-field>
+          </div>  
+            
+          <br>
+
+          <div class="row">
+              <mat-form-field class="col-md-8" hintLabel="Max 20 characters" 
+                              appearance="fill">
+                <mat-label>Enter your job</mat-label>
+                <input matInput 
+                       formControlName="job" 
+                       #job 
+                       maxlength="20"
+                       autocomplete="off"  
+                       placeholder="Ex. Software developer">
+                <mat-hint align="end">{{job.value?.length || 0}}/20</mat-hint>
+                <mat-error *ngIf="isEmpty( 'job' )">
+                  Job is <strong>Required</strong>
+                </mat-error>
+              </mat-form-field>
+          </div> 
+
+          <br>
+
+          <div class="row">
+            <div class="col-md-8">
+              <button 
+                      mat-raised-button 
+                      type="submit" 
+                      color="primary"
+                      [disabled]="myForm.invalid">Create
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
